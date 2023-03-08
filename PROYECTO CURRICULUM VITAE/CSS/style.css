@@ -1,0 +1,169 @@
+:root {
+    --fuente: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F2F3F4;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fuente);
+    font-size: 1.2rem;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7FB3D5;
+}
+
+/* TITULOS */
+
+.titulo_principal {
+    font-size: 5rem;
+    margin-bottom:  0;
+}
+
+/* PARRAFOS */
+
+.parrafo_header {
+    font-size: 2rem;
+}
+
+/* IMAGEN */
+
+.foto {
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+/* CONFIGURACION PRINCIPAL */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+/* MEDIA QUERYS*/
+
+@media (max-width: 768px) {
+    .foto {
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+/* BOTONES*/
+
+.boton {
+    color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #318aac;
+    color: #fff !important;
+}
+
+/* DATOS PERSONALES */
+
+.datos_personales {
+    border: solid 2px;
+    padding: 2rem;
+}
+
+.educacion {
+    padding: 2rem;
+}
+
+/* EXPERIENCIA LABORAL */
+
+.experiencia_laboral {
+    border: solid 2px;
+    padding: 2rem;
+}
+
+.experiencia {
+    padding: 2rem;
+}
+
+/* CONTACTO */
+.formulario {
+    background-color: #E5E8E8;
+    width: min(60rem, 100%); 
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text {
+    width: 80%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.campo textarea {
+    height: 20rem;
+}
+
+/* FOOTER */
+
+.footer {  
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: #7FB3D5;
+    font-style: italic;
+}
